@@ -3,6 +3,7 @@ Powershell function to create new Talos VMs (https://www.talos.dev/)
 
 # Pre-requisities 
 1. Download the latest `talos-amd64.iso` ISO from github [releases page](https://github.com/talos-systems/talos/releases)
+2. Create a New-TalosVM folder in any of your PS Module Path folders `$env:PSModulePath -split ';'` and save the New-TalosVM.psm1 there
 
 # Plan overview
 Here we will create a basic 3 node cluster with 1 control-plane and 2 worker nodes. The only difference between control plane and worker node is the amount of RAM and an additional storage VHD, this is personal perference so you can configure it to your liking.
